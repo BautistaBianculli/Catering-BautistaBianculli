@@ -150,13 +150,17 @@ footer{
 
 /* SERVICIOS */
 
-
 .text-main h2{
    margin-top: 20px; 
    text-align: center;
    margin-bottom: 20px;
    font-family: cursive;
    font-weight: lighter;
+}
+
+.text-main h2:hover{
+    color: red;
+    transform: scale(1.2);
 }
 
 .service-img-main img{
