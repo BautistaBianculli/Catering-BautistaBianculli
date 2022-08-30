@@ -6,62 +6,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <style> -->
-        <!-- @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');  -->
-        <!-- </style>  -->
+    <!-- @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');  -->
+    <!-- </style>  -->
     <title>Bianculli's Food | Home</title>
 
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-    <link rel="stylesheet" href="./css/style2.css">
+    <!-- Import boostrap.css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!--Import my css -->
+    <link rel="stylesheet" href="./css/style3..css">
 </head>
 
 <body>
-    <div class="index-grid-containter">
-        <!-- HEADER -->
-        <header class="header" >
-            <img src="./images/muestra/logo.png" alt="logo-empresa">
-            <nav>
-                <ul class="navbar-list">
-                    <li><a class="navbar-list-text" href="./index.html">HOME</a></li>
-                    <li><a class="navbar-list-text" href="./pages/servicios.html">SERVICIOS</a></li>
-                    <li><a class="navbar-list-text" href="./pages/galeria.html">GALERIA</a></li>
-                    <li><a class="navbar-list-text" href="./pages/nosotros.html">NOSOTROS</a></li>
-                    <li><a class="navbar-list-text" href="./pages/contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- MAIN -->
-        <main class="home-main" >
-            <section class="home-carrousel" >
-                <img src="./images/home/carrousel1.jpg" alt="carrousel-home">
-
-            </section>
-            <section class="home-img-with-text">
-                <img src="./images/home/200x200.jpg" alt="home-text-img"/>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iusto vitae necessitatibus assumenda
-                tenetur! Itaque qui pariatur magni sapiente accusamus laborum repudiandae soluta minima. <a href="#">Ver más</a></p>
-            </section>
-        </main>
-        <!-- FOOTER -->
-        <footer class="footer">
-            <p class="reserved">© 2022 BIANCULLI'S FOOD. TODOS LOS DERECHOS RESERVADOS.</p>
-                <form>
-                    <input type="email" name="newslatter-email-footer" id="newslatter-email-footer"
-                        placeholder="Ingresa tu email">
-                    <input type="submit" name="newslatter-button-footer" id="newslatter-button-footer" class="botton-newsletter" placeholder="Subscribite!">
-                </form>   
-            <div class="footer-img">
-                <a href="https://www.instagram.com" target="_blank"><img class="img-footer" src="./images/footer/instagram.png"
-                        alt="Instagram Logo"></a>
-                <a href="https://www.youtube.com" target="_blank"><img class="img-footer" src="./images/footer/youtube.png"
-                        alt="Youtube Logo"></a>
-                <a href="https://www.twitter.com" target="_blank"><img class="img-footer" src="./images/footer/twitter.png"
-                        alt="Twitter Logo"></a>
-                <a href="https://www.Whatsapp.com" target="_blank"><img class="img-footer" src="./images/footer/whatsapp.png"
-                        alt="Whatsapp Logo"></a>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <img src="images/logo.jpg" alt="logo-empresa" class="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar-per" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </footer>
-    </div>  
+        </nav>
+
+    </header>
+    <!-- MAIN -->
+        <section class="home-carrousel mx-auto mt-4 mb-4">
+            <!-- <img src="./images/home/carrousel1.jpg" alt="carrousel-home"> -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/home/carrousel1.jpg" class="d-block w-100" alt="carrousel1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/home/carrousel2.jpg" class="d-block w-100" alt="carrousel2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/home/carrousel3.jpg" class="d-block w-100" alt="carrousel3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Proximo</span>
+                </button>
+            </div>
+        </section>
+        <section class="home-img-with-text ms-5 me-5">
+                    <div class="card text-bg-light  border-dark mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4 img-text">
+                            <img src="./images/home/nosotros.jpg" class="img-fluid rounded-start img-100" alt="nosotros.jpg">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body tamaño">
+                              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit labore exercitationem sit atque, natus nemo tenetur maxime perspiciatis explicabo dicta aliquid ipsa, non assumenda debitis facere. Distinctio quisquam libero delectus.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        </section>
+    <!-- FOOTER -->
+    <footer class="text-center text-lg-start text-muted color-lg flex">
+        <!-- Copyright -->
+        <div class="p-2 font-footer" style="background-color: #f8f9fa;">
+           <p>© 2022 BIANCULLI'S FOOD. TODOS LOS DERECHOS RESERVADOS.</p>
+        </div>
+        <form class="form-floating">
+            <input type="email" class="mid-center" id="floatingInputValue" placeholder="name@example.com" value="test@example.com">
+          </form>
+        <div class="social-media">
+            <a href="https://www.instagram.com" target="_blank"><img src="./images/footer/instagram.png" alt="instagram-logo"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="./images/footer/youtube.png" alt="youtube-logo"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="./images/footer/twitter.png" alt="twitter-logo"></a>
+            <a href="https://www.whatsapp.com" target="_blank"><img src="./images/footer/whatsapp.png" alt="instagram-logo"></a>
+        </div>
+    </footer>
+    <!-- Import boostrap.css -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- Import Materializecss.css -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 
 </html>
