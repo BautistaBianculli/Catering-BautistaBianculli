@@ -1,0 +1,21 @@
+.servicios{
+    .image-main-service{
+        width: 600px;
+        height: 300px;
+    } 
+
+    .services {
+        .expand {
+            width: 35%;
+            height: 450px;
+            .total{
+                height: 100%;
+                .card-img-top{
+                    height: 300px;
+                    width: 98%;
+                }
+            }
+        }
+    }
+
+}

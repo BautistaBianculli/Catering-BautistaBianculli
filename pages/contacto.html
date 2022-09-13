@@ -7,85 +7,182 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bianculli's Food | Contacto</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!--Import my css -->
+    <link rel="stylesheet" href="../css/style.css">
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <!-- KEYWORDS -->
+    <meta name="keywords" content="catering, comida, fiesta, bianculli's food, servicio a mesa, casamientos, eventos, contacto">
+    <meta name="Description" content="Contactanos para mas informacion acerca de nuestros servicios!">
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
-        <img class="logo" src="../images/muestra/logo.png" alt="logo-empresa">
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li class="navbar-list-li"><a class="navbar-list-text" href="../index.html">HOME</a></li>
-                <li class="navbar-list-li"><a class="navbar-list-text" href="./servicios.html">SERVICIOS</a></li>
-                <li class="navbar-list-li"><a class="navbar-list-text" href="./galeria.html">GALERIA</a></li>
-                <li class="navbar-list-li"><a class="navbar-list-text" href="./nosotros.html">NOSOTROS</a></li>
-                <li class="navbar-list-li"><a class="navbar-list-text" href="./contacto.html">CONTACTO</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <img src="../images/logo.png" alt="logo-empresa" class="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar-per" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- FIN HEADER -->
     <!-- MAIN CONTACTO -->
-    <main class="contacto">            
+    <main class="contacto">
         <h2 class="tittle-contact">CONTACTO</h2>
-        <div class="form-contact-text">
-            <p>
-                <span class="contact-adress">Dirección</span>
-                <br>
-                Buenos Aires 1290, Capital Federal, Buenos Aires
-                <br>
-                <span class="contact-email">E-mail</span>
-                <br>
+        <div class="card mx-auto mb-3 contact-box">
+            <div class="card-body">
+                <h5 class="card-title">Direccion</h5>
+                <p class="card-text">Buenos Aires 1290, Capital Federal, Buenos Aires <br>
+                <h5 class="card-title">E-mail</h5>
                 biancullisfood@gmail.com
-            </p>
-            <div class="contact-form">
-                <form class="contact-form-flex" action="#" method="post">
-                    <input type="text" name="completeName" id="completeName" placeholder="Nombre y Apellido">
-                    <input type="email" name="email" id="email" placeholder="Email">
-                    <input type="text" name="telephone" id="telephone" placeholder="Telefono">
-                    <select name="services" id="services">
-                        <option value="1">Catering</option>
-                        <option value="2">Fiesta</option>
-                        <option value="3">Gourmet</option>
-                        <option value="4">Vianda</option>
-                    </select>
-                    <br>
-                    <input type="text" name="adress" id="adress" placeholder="Direccion">
-                    <input type="text" name="postalCode" id="postalCode" placeholder="Codigo Postal">
-                    <input type="text" name="state" id="state" placeholder="Provincia">
-                    <br>
-                    <input type="text" name="messageBox" id="messageBox"
-                        placeholder="Escribenos un mensaje para dejarnos">
-                    <input class="contact-botton" type="reset" name="buttonReset" id="buttonReset">
-                    <input class="contact-botton" type="submit" name="buttonSumbit" id="buttonSumbit">
-                </form>
+                </p>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-lg-7 mx-auto">
+                <div class="card mt-2 mx-auto p-4 bg-light">
+                    <div class="card-body bg-light">
+
+                        <div class="container">
+                            <form id="contact-form" role="form">
+
+
+
+                                <div class="controls">
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_name">Nombre</label>
+                                                <input id="form_name" type="text" class="form-control"
+                                                    required="required">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_lastname">Apellido</label>
+                                                <input id="form_lastname" type="text" class="form-control"
+                                                    required="required">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_email">Email</label>
+                                                <input id="form_email" type="email" class="form-control"
+                                                    required="required">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_need">Servicios</label>
+                                                <select id="form_need" name="need" class="form-control"
+                                                    required="required" data-error="Please specify your need.">
+                                                    <option value="" selected disabled>Seleccione un servicio</option>
+                                                    <option>Catering</option>
+                                                    <option>Fiesta</option>
+                                                    <option>Gourmet</option>
+                                                    <option>Viandas</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="form_message">Mensaje</label>
+                                                <textarea id="form_message" name="message" class="form-control" rows="4"
+                                                    required="required"></textarea>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="col-md-12">
+
+                                            <input type="submit" class="btn btn-success btn-send mt-1 pt-2 btn-block
+                                      " value="Enviar">
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- /.8 -->
+
             </div>
         </div>
     </main>
     <!-- FIN MAIN -->
     <!-- INICIO FOOTER -->
-    <footer>
-        <p class="reserved">© 2022 BIANCULLI'S FOOD. TODOS LOS DERECHOS RESERVADOS.</p>
-        <form>
-            <input type="email" name="newslatter-email-footer" id="newslatter-email-footer"
-                placeholder="Ingresa tu email">
-            <input type="submit" name="newslatter-button-footer" id="newslatter-button-footer"
-                class="botton-newsletter">
-            <!-- <input type="sumbit" name="newslatter-sumbit-footer" id="newslatter-sumbit-footer" placeholder="Enviar"> -->
+    <footer class="text-center text-lg-start text-muted color-lg flex">
+        <!-- Copyright -->
+        <div class="p-2 font-footer" style="background-color: #f8f9fa;">
+            <p>© 2022 BIANCULLI'S FOOD. TODOS LOS DERECHOS RESERVADOS.</p>
+        </div>
+        <form class="form-floating">
+            <input type="email" class="mid-center" id="floatingInputValue" placeholder="name@example.com"
+                value="test@example.com">
         </form>
-        <div>
-            <a href="https://www.instagram.com" target="_blank"><img class="img-footer"
-                    src="../images/footer/instagram.png" alt="Instagram Logo"></a>
-            <a href="https://www.youtube.com" target="_blank"><img class="img-footer" src="../images/footer/youtube.png"
-                    alt="Youtube Logo"></a>
-            <a href="https://www.twitter.com" target="_blank"><img class="img-footer" src="../images/footer/twitter.png"
-                    alt="Twitter Logo"></a>
-            <a href="https://www.Whatsapp.com" target="_blank"><img class="img-footer"
-                    src="../images/footer/whatsapp.png" alt="Whatsapp Logo"></a>
+        <div class="social-media">
+            <a href="https://www.instagram.com" target="_blank"><img src="../images/footer/instagram.png"
+                    alt="instagram-logo"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="../images/footer/youtube.png"
+                    alt="youtube-logo"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="../images/footer/twitter.png"
+                    alt="twitter-logo"></a>
+            <a href="https://www.whatsapp.com" target="_blank"><img src="../images/footer/whatsapp.png"
+                    alt="instagram-logo"></a>
         </div>
     </footer>
     <!-- FIN FOOTER -->
+    <!-- Import Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- Import Materializecss.css -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 
 </html>

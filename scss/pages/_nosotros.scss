@@ -1,0 +1,18 @@
+.nosotros{
+    margin-top: 25px;
+    margin-bottom: 50px;
+    h2{
+        text-align: center;
+        font-weight: lighter;
+        padding-bottom: 30px;
+    }
+    
+    .tamaño-nosotros{
+        height: 80%;
+        .card{
+            .img-tamaño{
+                width: 50%;
+            }
+        }
+    }
+}
