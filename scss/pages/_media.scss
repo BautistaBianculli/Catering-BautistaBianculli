@@ -1,84 +1,131 @@
-@media(max-width:900px) {
-   footer{
-    .social-media img {
-        width: 25px;
-        height: 25px;
+@media(max-width:1024px) {
+    footer {
+        .social-media img {
+            width: 25px;
+            height: 25px;
+        }
     }
-   }
-    
+
+    .index {
+        height: 60rem;
+
+        .indexflex {
+            margin-top: 0px;
+            flex-direction: column;
+
+            .img-fondo {
+                width: 400px;
+            }
+        }
+    }
+
+}
+
+@media (max-width:769px) {
+
+    .index {
+        height: 60rem;
+
+        .indexflex {
+            .img-fondo{
+                width: 450px;
+            }
+        }
+
+    }
 }
 
 
 @media (max-width:700px) {
 
     .index {
-
         .home-carrousel {
             width: 400px;
             height: 200px;
         }
-    }
 
-    .home-img-with-text {
-        .card {
-            .img-text {
-                width: 200px;
+        .indexflex {
+            .home-img-with-text {
+                .card {
+                    .img-text {
+                        width: 200px;
+                    }
+                }
+            }
+            .img-fondo{
+                width: 450px;
+            }
+        }
+
+    }
+}
+
+@media (max-width:450px) {
+
+    .index {
+        .home-carrousel {
+            width: 95%;
+        }
+        .indexflex{
+            .img-fondo{
+                width: 70%;
             }
         }
     }
 
-}
-@media (max-width:450px){
-
-    .index{
-        .home-carrousel{
-            width: 300px;
-        }
-    }
-
-    .home-img-with-text{´
-        .card{
-            .img-text{
+    .home-img-with-text {
+        ´ .card {
+            .img-text {
                 margin: 0px auto;
                 margin-top: 5px;
             }
         }
     }
-    
-    .contacto{
 
-        .contact-box{
+    .contacto {
+
+        .contact-box {
             width: 80%;
         }
     }
-    
 
-    .flex{
+
+    .flex {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    footer{
-        .social-media{
+
+    footer {
+        .social-media {
             width: 80%;
             margin-top: 5%;
             margin-bottom: 5%;
         }
     }
-    
-    .servicios{
-        .image-main-service{
+
+    .servicios {
+        .image-main-service {
             width: 300px;
             height: 200px;
         }
 
-        .services{
-            .expand{
+        .services {
+            .expand {
                 width: 75%;
             }
         }
     }
-    
 
-    
+    .galeria{
+        height: 1300px;
+        img{
+            width: 250px;
+            height: 200px;
+            padding-left: 0px;
+        }
+    }
+
+
+
 }
