@@ -81,7 +81,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 5em; }
   .galeria img {
     padding-left: 15px;
     margin-bottom: 15px;
