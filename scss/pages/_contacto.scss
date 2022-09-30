@@ -16,5 +16,12 @@
     .row{
         width: 95%;
         margin-bottom: 25px;
+        .card{
+            border: 0;
+        }      
+        
+        .btn-background{
+            background-color: rgba(179, 175, 175, 0.356);
+        }
     }
 }

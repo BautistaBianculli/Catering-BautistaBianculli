@@ -6,13 +6,16 @@
         font-weight: lighter;
         padding-bottom: 30px;
     }
-    
+    .img-nosotros{
+        width: 80%; 
+        height:auto; 
+        margin: 0px auto;
+    }
     .tamaño-nosotros{
         height: 80%;
         .card{
-            .img-tamaño{
-                width: 50%;
-            }
+            background-color: white;
+            border: 0;
         }
     }
 }

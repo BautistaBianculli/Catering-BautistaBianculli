@@ -53,6 +53,8 @@ footer {
       height: 100%; }
     .index .indexflex .home-img-with-text .card .tamaño {
       height: 80%; }
+      .index .indexflex .home-img-with-text .card .tamaño .maincenter {
+        margin-left: 20%; }
     .index .indexflex .img-fondo {
       width: 500px; }
 
@@ -68,7 +70,8 @@ footer {
       height: 100%; }
       .servicios .services .expand .total .card-img-top {
         height: 300px;
-        width: 98%; }
+        width: 98%;
+        margin-top: 1%; }
 
 .galeria {
   margin-top: 25px;
@@ -100,10 +103,15 @@ footer {
     text-align: center;
     font-weight: lighter;
     padding-bottom: 30px; }
+  .nosotros .img-nosotros {
+    width: 80%;
+    height: auto;
+    margin: 0px auto; }
   .nosotros .tamaño-nosotros {
     height: 80%; }
-    .nosotros .tamaño-nosotros .card .img-tamaño {
-      width: 50%; }
+    .nosotros .tamaño-nosotros .card {
+      background-color: white;
+      border: 0; }
 
 .contacto {
   display: flex;
@@ -120,6 +128,10 @@ footer {
   .contacto .row {
     width: 95%;
     margin-bottom: 25px; }
+    .contacto .row .card {
+      border: 0; }
+    .contacto .row .btn-background {
+      background-color: rgba(179, 175, 175, 0.356); }
 
 @media (max-width: 1024px) {
   footer .social-media img {
